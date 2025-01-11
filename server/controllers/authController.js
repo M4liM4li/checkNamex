@@ -38,6 +38,7 @@ exports.login = async (req, res) => {
                     message: 'เข้าสู่ระบบสำเร็จ',
                     user: {
                         id: user.id,
+                        role:user.role
                     }
                 });
             } else {
