@@ -1,0 +1,7 @@
+{
+    "rewrites": [
+      { "source": "/Home", "destination": "/" },
+      { "source": "/Teacher", "destination": "/" }
+    ]
+  }
+  
