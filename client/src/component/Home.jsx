@@ -10,7 +10,7 @@ const Home = () => {
   const fetchUserData = async () => {
     try {
       const userId = JSON.parse(sessionStorage.getItem("user")).id;
-      const response = await fetch(`http://check-namex-server.vercel.app/api/users/${userId}`);
+      const response = await fetch(`https://check-namex-server.vercel.app/api/users/${userId}`);
       const data = await response.json();
 
       if (data.success) {
@@ -26,7 +26,7 @@ const Home = () => {
     try {
       const userId = JSON.parse(sessionStorage.getItem("user")).id;
       const response = await fetch(
-        `http://check-namex-server.vercel.app/api/attendance/${userId}`
+        `https://check-namex-server.vercel.app/api/attendance/${userId}`
       );
       const data = await response.json();
 
